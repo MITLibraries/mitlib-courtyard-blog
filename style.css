@@ -1,0 +1,14 @@
+/*
+ Theme Name:     Courtyard - Blog
+ Theme URI:      https://github.com/MITLibraries/courtyard-blog/
+ Description:    This is a child theme of the Courtyard template meant for blog-like websites.
+ Author:         Matt Bernhardt
+ Author URI:     http://github.com/matt-bernhardt/
+ Template:       courtyard
+ Version:        0.1
+ License:        GNU General Public License
+ License URI:    license.txt
+
+*/
+
+@import '../courtyard/style.css';
