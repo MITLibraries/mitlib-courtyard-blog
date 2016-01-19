@@ -12,3 +12,45 @@
 */
 
 @import '../courtyard/style.css';
+
+h1 {
+	font-size: 27px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 21px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 15px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+#categories-2 ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+
+#categories-2 .children {
+	padding-left: 40px;
+}
+
+article {
+	padding-bottom: 2rem;
+}
+
+.entry-meta {
+	color: #696969;
+	font-size: 11px;
+}
