@@ -39,11 +39,12 @@ function courtyard_entry_title() {
 	$tag_single = str_replace( 'sticky','',strip_tags( get_the_tag_list( '', '', '' ) ) );
 
 	if ( $tag_single ) {
-		$courtyard_post_title = __( '%1$s: %2$s Meeting', 'courtyard-blog' );
+		$courtyard_post_title = __( '%1$s: %2$s', 'courtyard-blog' );
 	} elseif ( $category_single ) {
-		$courtyard_post_title = __( '%s$s Meeting', 'courtyard-blog' );
+		$courtyard_post_title = __( '%1$s Update', 'courtyard-blog' );
 	} else {
-		$courtyard_post_title = __( 'General Meeting', 'courtyard-blog' );
+		// It _should_ be impossible to have an uncategorized post, but...
+		$courtyard_post_title = __( 'General Update', 'courtyard-blog' );
 	}
 	printf(
 		esc_html( $courtyard_post_title ),
