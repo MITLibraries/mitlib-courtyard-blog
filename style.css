@@ -43,12 +43,12 @@ h6,
 	font-size: 12px;
 }
 
-#categories-2 ul {
+#sidebar ul {
 	padding-left: 0;
 	list-style-type: none;
 }
 
-#categories-2 .children {
+#sidebar .children {
 	padding-left: 40px;
 }
 
