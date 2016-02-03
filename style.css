@@ -5,7 +5,7 @@
  Author:         Matt Bernhardt
  Author URI:     http://github.com/matt-bernhardt/
  Template:       courtyard
- Version:        1.0
+ Version:        1.1
  License:        GNU General Public License
  License URI:    license.txt
 
@@ -13,36 +13,42 @@
 
 @import '../courtyard/style.css';
 
-h1 {
+h1,
+.h1 {
 	font-size: 27px;
 }
 
-h2 {
+h2,
+.h2 {
 	font-size: 24px;
 }
 
-h3 {
+h3,
+.h3 {
 	font-size: 21px;
 }
 
-h4 {
+h4,
+.h4 {
 	font-size: 18px;
 }
 
-h5 {
+h5,
+.h5 {
 	font-size: 15px;
 }
 
-h6 {
+h6,
+.h6 {
 	font-size: 12px;
 }
 
-#categories-2 ul {
+#secondary ul {
 	padding-left: 0;
 	list-style-type: none;
 }
 
-#categories-2 .children {
+#secondary .children {
 	padding-left: 40px;
 }
 
