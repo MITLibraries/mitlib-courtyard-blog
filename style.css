@@ -74,3 +74,9 @@ article {
 	margin-left: 20px;
 	margin-bottom: 5px;
 }
+
+/* make tagcloud a plain list */
+.tagcloud a {
+  display: block;
+  font-size: 1.4rem !important;
+}
