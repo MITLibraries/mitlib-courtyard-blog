@@ -8,6 +8,16 @@
  */
 
 /**
+ * Enqueue parent theme styles
+ * @ https://digwp.com/2016/01/include-styles-child-theme/
+ */
+function courtyard_enqueue_styles() {
+	// Encqueue parent styles.
+	wp_enqueue_style( 'courtyard', get_template_directory_uri() . '/style.css' );
+}
+add_action( 'wp_enqueue_scripts', 'courtyard_enqueue_styles' );
+
+/**
  * Posted_on rewrite
  */
 function courtyard_posted_on() {
