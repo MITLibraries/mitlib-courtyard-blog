@@ -16,7 +16,7 @@ module.exports = {
       expand: true,
       flatten: true,
       src: ['css/style.css'],
-      dest: '',
+      dest: ''
     }]
   }
 }
