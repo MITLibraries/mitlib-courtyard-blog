@@ -24,7 +24,7 @@ function courtyard_posted_on() {
 	print '<span class="sep">' . esc_html__( 'Posted on ', 'twentyeleven' ) . '</span>';
 	printf( '<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>',
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html__( get_the_date(), 'twentyeleven' )
+		esc_html( get_the_date() )
 	);
 }
 
@@ -49,8 +49,10 @@ function courtyard_entry_title() {
 	$tag_single = str_replace( 'sticky','',strip_tags( get_the_tag_list( '', '', '' ) ) );
 
 	if ( $tag_single ) {
+		// Translators: Used for department updates in a specified month.
 		$courtyard_post_title = __( '%1$s: %2$s', 'courtyard-blog' );
 	} elseif ( $category_single ) {
+		// Translators: Used for department updates without a month attached.
 		$courtyard_post_title = __( '%1$s Update', 'courtyard-blog' );
 	} else {
 		// It _should_ be impossible to have an uncategorized post, but...
