@@ -11,5 +11,7 @@
 		<exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" />
 		<exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
+		<!-- Exclude the following known-failing sniffs -->
+		<exclude name="Squiz.PHP.EmbeddedPhp.SpacingBeforeClose" />
 	</rule>
 </ruleset>

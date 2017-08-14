@@ -8,13 +8,23 @@
  */
 
 /**
+ * Enqueue parent theme styles
+ * @ https://digwp.com/2016/01/include-styles-child-theme/
+ */
+function courtyard_enqueue_styles() {
+	// Encqueue parent styles.
+	wp_enqueue_style( 'courtyard', get_template_directory_uri() . '/style.css' );
+}
+add_action( 'wp_enqueue_scripts', 'courtyard_enqueue_styles' );
+
+/**
  * Posted_on rewrite
  */
 function courtyard_posted_on() {
 	print '<span class="sep">' . esc_html__( 'Posted on ', 'twentyeleven' ) . '</span>';
 	printf( '<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>',
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html__( get_the_date(), 'twentyeleven' )
+		esc_html( get_the_date() )
 	);
 }
 
@@ -39,8 +49,10 @@ function courtyard_entry_title() {
 	$tag_single = str_replace( 'sticky','',strip_tags( get_the_tag_list( '', '', '' ) ) );
 
 	if ( $tag_single ) {
+		// Translators: Used for department updates in a specified month.
 		$courtyard_post_title = __( '%1$s: %2$s', 'courtyard-blog' );
 	} elseif ( $category_single ) {
+		// Translators: Used for department updates without a month attached.
 		$courtyard_post_title = __( '%1$s Update', 'courtyard-blog' );
 	} else {
 		// It _should_ be impossible to have an uncategorized post, but...
