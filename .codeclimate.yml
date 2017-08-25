@@ -2,6 +2,11 @@
 engines:
   csslint:
     enabled: true
+    checks:
+      import:
+        enabled: false
+      important:
+        enabled: false
   duplication:
     enabled: true
     config:
@@ -12,6 +17,9 @@ engines:
       - php
   eslint:
     enabled: true
+    checks:
+      global-require:
+        enabled: false
   fixme:
     enabled: true
   phpcodesniffer:

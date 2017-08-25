@@ -1,0 +1,28 @@
+{
+  "name": "courtyard-blog",
+  "version": "1.2.0",
+  "description": "This is a child theme of the Courtyard template meant for blog-like websites.",
+  "bugs": "https://github.com/MITLibraries/courtyard-blog/issues",
+  "license": "GPL-3.0",
+  "repository" : {
+    "type": "git",
+    "url": "git+https://github.com/MITLibraries/courtyard-blog.git"
+  },
+  "devDependencies": {
+    "glob": "~7.1.2",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "~3.0.4",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-cssmin": "~2.2.1",
+    "grunt-contrib-imagemin": "~2.0.1",
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-contrib-sass": "~1.0.0",
+    "grunt-contrib-uglify": "~3.0.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-gitinfo": "~0.1.8",
+    "grunt-replace": "~1.0.1"
+  },
+  "dependencies": {
+    "load-grunt-tasks": "~3.5.2"
+  }
+}
