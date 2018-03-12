@@ -36,7 +36,7 @@ function courtyard_entry_title() {
 	$category_single = $category_single[0]->name;
 
 	// Translators: used between list items, there is a space after the comma.
-	$tag_single = str_replace( 'sticky','',strip_tags( get_the_tag_list( '', '', '' ) ) );
+	$tag_single = str_replace( 'sticky', '', strip_tags( get_the_tag_list( '', '', '' ) ) );
 
 	if ( $tag_single ) {
 		$courtyard_post_title = __( '%1$s: %2$s', 'courtyard-blog' );
