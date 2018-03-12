@@ -1,10 +1,10 @@
 <?php
 /**
- * Courtyard-blog functions and definitions.
+ * Mitlib-Courtyard-blog functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Courtyard-blog
+ * @package Mitlib-Courtyard-blog
  */
 
 /**
