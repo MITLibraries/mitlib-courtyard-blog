@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Courtyard-blog
+ * @package mitlib-courtyard-blog
  */
 
 ?>
