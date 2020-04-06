@@ -4,7 +4,7 @@
   "description": "This is a child theme of the Mitlib Courtyard template meant for blog-like websites.",
   "bugs": "https://github.com/MITLibraries/mitlib-courtyard-blog/issues",
   "license": "GPL-3.0",
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/MITLibraries/mitlib-courtyard-blog.git"
   },
